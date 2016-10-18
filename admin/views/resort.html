@@ -1,0 +1,68 @@
+<!--middle area-->
+<div id="page-wrapper">
+    <div id="page-content-wrapper">
+        <button type="button" class="hamburger is-open animated fadeInLeft" data-toggle="offcanvas"> </button>
+        <div class="container-fluid">
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol class="breadcrumb custom-style">
+                        <li class="active">
+                            Dashboard/Manage Resorts
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Manage Resorts</h3>
+                            <button type="button" class="btn btn-warning abs-btn rounded-btn" ng-click="moveto_ResortAdd();"><img src="images/plus-icon.png" alt=""></button>
+                        </div>
+                        <div class="panel-body no-pad-top-bottom">
+                            <div class="table-responsive">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Sl</th>
+                                            <th>Company Name</th>
+                                            <th>Name</th>
+                                            <th>Rating</th>
+                                            <th>Total No of Rooms</th>
+                                            <th>details</th>
+                                            <th>delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="i in list">
+                                            <td>#{{$index + 1}}</td>
+                                            <td>{{i.company_id.name}}</td>
+                                            <td>{{i.name}}</td>
+                                            <td>{{i.total_rating}}</td>
+                                            <td>{{i.total_number_of_rooms}}</td>
+                                            <td><a href="" class="btn btn-success with-icon" ng-click="goto_more();"><i class="fa fa-eye" aria-hidden="true"></i>View</a></td>
+                                            <td><a href="" ng-if="i.status == 1" ng-click="resort_statusChange(i._id,0,i.category_type);" class="btn btn-danger with-icon"><i class="fa fa-trash-o" aria-hidden="true"></i>Deactivate</a>
+                                                <a href="" ng-if="i.status == 0" ng-click="resort_statusChange(i._id,1,i.category_type);" class="btn btn-success with-icon"><i class="fa fa-trash-o" aria-hidden="true"></i>Activate</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <ul class="pagination pull-right">
+                                <li><a href="#">1</a></li>
+                                <li class="active"><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!--middle area end-->

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tripoAsiaApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>{{title}}</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- owl carousel -->
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl-top.css" rel="stylesheet">
+    <!-- lightgallery -->
+    <link href="css/justifiedGallery.min.css" rel="stylesheet">
+    <link href="css/lightgallery.css" rel="stylesheet">
+    <link href="css/video-js.css" rel="stylesheet">
+    <!-- flexslider -->
+    <link href="css/flexslider.css" rel="stylesheet">
+    <!-- responsive tab -->
+    <link href="css/boottab-responsive.css" rel="stylesheet">
+    <!-- bootstrap datetimepicker -->
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <!-- frontend css -->
+    <link href="css/hamburgers.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/frontend-style.css" rel="stylesheet">
+    <!-- frontend css -->
+    <link href="css/frontend-responsive.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-controller='indexcontroller'>
+    <div class="overlay">
+        <!-- top-section -->
+        <div class="top-section" style="background:url(images/slide-home.jpg) no-repeat 0 0;background-size:cover;">
+            <!--bottom-border-panel-->
+            <div class="bottom-border-panel"></div>
+            <!--//bottom-border-panel-->
+            <!-- header -->
+            <header>
+                <a href="index.html" class="pull-left" id="logo"><img src="images/logo.png" alt=""></a>
+                <div class="header-right pull-right">
+                    <div class="hamburger hamburger--elastic-r">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                    <ul class="main-sitemenu pull-left">
+                        <li class="dropdown mega-dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+                                <span class="icon-img3a icon-placement"></span> Our Tours</a>
+                            <ul class="dropdown-menu mega-dropdown-menu">
+                                <li class="icon-section main_parent">
+                                    <div class="table-prop">
+                                        <div class="table-cell">
+                                            <span class="icon-img3a icon-placement"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-sm-4 main_parent">
+                                    <ul>
+                                        <li class="dropdown-header">Group Tours</li>
+                                        <li><a href="#">The Tokaido route</a></li>
+                                        <li><a href="#">Cityscapes and Landscapes</a></li>
+                                        <li><a href="#">Cities and mountains peaks</a></li>
+                                        <li><a href="#">Off the beaten track</a></li>
+                                        <li><a href="#">Your tour leaders</a></li>
+                                        <li><a href="#">Common questions</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-sm-4 main_parent">
+                                    <ul>
+                                        <li class="dropdown-header">Solo Tour</li>
+                                        <li><a href="#">The Tokaido route</a></li>
+                                        <li><a href="#">Cityscapes and Landscapes</a></li>
+                                        <li><a href="#">Cities and mountains peaks</a></li>
+                                        <li><a href="#">Off the beaten track</a></li>
+                                        <li><a href="#">Your tour leaders</a></li>
+                                        <li><a href="#">Common questions</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-sm-4 main_parent">
+                                    <ul>
+                                        <li class="dropdown-header">Specialty Tour</li>
+                                        <li><a href="#">The Tokaido route</a></li>
+                                        <li><a href="#">Cityscapes and Landscapes</a></li>
+                                        <li><a href="#">Cities and mountains peaks</a></li>
+                                        <li><a href="#">Off the beaten track</a></li>
+                                        <li><a href="#">Your tour leaders</a></li>
+                                        <li><a href="#">Common questions</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="icon-img2 icon-placement"></span> Transporation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="icon-img6 icon-placement"></span> Accomodation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="icon-img1 icon-placement"></span> Food &amp; Beverages</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="icon-img4 icon-placement"></span> Product and Services</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="icon-img5 icon-placement"></span> Space for Lease</a>
+                        </li>
+                    </ul>
+                    <div class="right-right-top pull-right">
+                        <select>
+                            <option value="Eng">Eng</option>
+                            <option value="Lang1">Lang1</option>
+                            <option value="Lang2">Lang2</option>
+                            <option value="Lang3">Lang3</option>
+                        </select>
+                        <div class="search-panel">
+                            <a href="javascript:void(0);" class="search-toggle"><img src="images/search-icn.png" alt=""></a>
+                            <div class="search-container">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <button type="submit" title="Search" class="button search-button search-submit"><i class="fa fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" class="btn btn-warning text-uppercase pull-left">Partners to login</a>
+                        <a href="#" class="btn btn-info text-uppercase pull-left" data-toggle="modal" data-target="#myModal">login</a>
+                        <a href="javascript:void(0);" class="btn btn-info text-uppercase pull-left">register</a>
+                    </div>
+                </div>
+            </header>
+            <!--// header -->
+            <div class="responsive-toptab">
+                <div class="tripo-credit">
+                    <a href="#">TripoCredit <br />Top Up</a>
+                </div>
+                <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                    <ul id="myTab" class="nav nav-tabs nav-tabs-responsive" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+                                <span class="text">Accommodation</span>
+                            </a>
+                        </li>
+                        <li role="presentation" class="next">
+                            <a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">
+                                <span class="text">Transportation</span>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#samsa" role="tab" id="samsa-tab" data-toggle="tab" aria-controls="samsa">
+                                <span class="text">Tour</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+                            <div class="row custom-row">
+                                <form>
+                                    <div class="col-sm-4 custom-pad">
+                                        <div class="form-group with-icon">
+                                            <label for="email">Where would you like to go?</label>
+                                            <div class="total-form">
+                                                <span class="icon-reprens"><img src="images/home.png" alt=""></span>
+                                                <input type="email" class="form-control" id="email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 custom-pad">
+                                        <div class="form-group with-icon">
+                                            <label for="datetimepicker6">Check-in</label>
+                                            <div class="total-form right-align">
+                                                <span class="icon-reprens"><img src="images/date.png" alt=""></span>
+                                                <input type="text" class="form-control" id='datetimepicker6'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 custom-pad">
+                                        <div class="form-group with-icon">
+                                            <label for="datetimepicker7">Check-out</label>
+                                            <div class="total-form right-align">
+                                                <span class="icon-reprens"><img src="images/date.png" alt=""></span>
+                                                <input type="text" class="form-control" id="datetimepicker7">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 custom-pad">
+                                        <div class="form-group">
+                                            <label for="accomodation">Total Number</label>
+                                            <div class="total-form">
+                                                <span class="icon-reprens"><img src="images/accomodation.png" alt=""></span>
+                                                <select class="form-control" id="accomodation">
+                                                    <option value="volvo">1 Room, 2 Adults. 1 Children</option>
+                                                    <option value="saab">2 Room, 2 Adults. 1 Children</option>
+                                                    <option value="mercedes">3 Room, 2 Adults. 1 Children</option>
+                                                    <option value="audi">4 Room, 2 Adults. 1 Children</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1 custom-pad">
+                                        <button type="submit" class="btn btn-warning btn-search text-uppercase">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+                            <p>
+                                Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+                            </p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="samsa" aria-labelledby="samsa-tab">
+                            <p>
+                                One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.
+                            </p>
+                            <p>
+                                He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
+                            </p>
+                            <p>
+                                The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?
+                            </p>
+                            <p>
+                                " he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.
+                            </p>
+                            <p>
+                                A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.
+                            </p>
+                            <p>
+                                It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.
+                            </p>
+                            <p>
+                                Drops of rain could be heard hitting the pane, which made him feel quite sad.
+                            </p>
+                            <p>
+                                "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn't get into that position. However hard he threw himself onto his right, he always rolled back to where he was.
+                            </p>
+                            <p>
+                                He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before. "Oh, God", he thought, "what a strenuous career it is that I've chosen!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// top-section -->
+        <ng-view>
+        </ng-view>
+        <!-- footer -->
+        <footer class="becomeahost_bottom">
+            <div class="becomeahost_bottomTop">
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-1">
+                    <div class="becomeahost_bottomCell">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="#">Story</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Feedback</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-1">
+                    <div class="becomeahost_bottomCell">
+                        <h2>tours</h2>
+                        <ul>
+                            <li><a href="#">Group Tours</a></li>
+                            <li><a href="#">Solo Tours</a></li>
+                            <li><a href="#">Speciality  Tours</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
+                    <div class="becomeahost_bottomCell">
+                        <h2>Services</h2>
+                        <ul>
+                            <li><a href="#">Our Travel Angels</a></li>
+                            <li><a href="#">Activities in Malayasia</a></li>
+                            <li><a href="#">JRP Assistance</a></li>
+                            <li><a href="#">A Holiday in Kulampur</a></li>
+                            <li><a href="#">Prepare Malayasia Trip</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="becomeahost_bottomCell two_cell">
+                        <h2>Accommodation</h2>
+                        <ul>
+                            <li><a href="#">Houses for Rent in Malayasia</a></li>
+                            <li><a href="#">Houses for Rent in Kulampur</a></li>
+                            <li><a href="#">Houses for Rent in Malayasia</a></li>
+                            <li><a href="#">Houses for Rent in Kulampur</a></li>
+                            <li><a href="#">Houses for Rent in Malayasia</a></li>
+                            <li><a href="#">Houses for Rent in Kulampur</a></li>
+                            <li><a href="#">Houses for Rent in Malayasia</a></li>
+                            <li><a href="#">Houses for Rent in Kulampur</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                    <div class="becomeahost_bottomCell get-touch">
+                        <h2>Get in touch</h2>
+                        <p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
+                        <ul>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>84 Street, City, State 24813</li>
+                            <li><i class="fa fa-mobile" aria-hidden="true"></i>
+                                <a href="tel:+00 (123) 456 78 90">+00 (123) 456 78 90</a></li>
+                            <li><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <a href="mailto:info@Tripoasia.com">info@Tripoasia.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="becomeahost_bottomCell last_cell">
+                        <h2>Email Subscribe</h2>
+                        <p>Tibusam eumenis et consent accullignis dentibea autem inisita.</p>
+                        <div class="suscribe_area">
+                            <div class="suscribe_area_input">
+                                <input type="text" value="" name="" placeholder="Enter your email address" />
+                            </div>
+                            <div class="suscribe_area_submit">
+                                <input type="submit" value="Subscribe" name="" />
+                            </div>
+                        </div>
+                        <div class="become_social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="becomeahost_bottomBottom">
+                <p>&copy; 2016 Tripoasia. All rights reserved.</p>
+            </div>
+        </footer>
+        <!--// footer -->
+    </div>
+    <!--// login-popup -->
+    <div id="myModal" class="modal login-popup fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="logo">
+                    <a href="#"><img src="images/login-logo.png" alt=" "></a>
+                </div>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <a href="#" class="facebook">Continue with Facebook</a>
+                    <a href="#" class="gplus">Continue with Google</a>
+                </div>
+                <div class="or">
+                    <span>OR</span>
+                </div>
+                <div class="modal-body">
+                    <h3 style='color:tomato; text-align:center' ng-hide="login.err==''">{{login.err}}</h3>
+                    <form angular-validator-submit="login_check()" name="login_form" id="login_form" novalidate angular-validator>
+                        <label>
+                            <input type="hidden" name="device_type" ng-model="login_check_obj.device_type" class="form-control" id="device_type">
+                            <input type="email" class="form-control" name="user_email" id="user_email" ng-model="login_check_obj.email" placeholder="Email Address" validate-on="dirty" required-message="'This field is required..'" required>
+                        </label>
+                        <label>
+                            <input type="password" class="form-control" name="user_password" id="user_password" ng-model="login_check_obj.password" placeholder="Password" validate-on="dirty" required-message="'This field is required..'" required>
+                        </label>
+                        <button type="submit" class="login">Login</button>
+                        <p>By signing up, I agree to Tripoasia Terms of Service, Payments Terms of Service, Privacy Policy, Guest Refund Policy, and Host Guarantee Terms. </p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-sm-8">
+                        <p>Already have an Tripoasia account?</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script type="text/javascript" src="WebJs/angularjs-dropdown-multiselect.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/ng-idle/angular-idle.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/pc035860/angular-highlightjs/master/angular-highlightjs.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/Swiper/dist/js/swiper.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/oclazyload/dist/ocLazyLoad.js"></script>
+    <script src="bower_components/odometer/odometer.js"></script>
+    <script src="bower_components/angular-odometer/dist/angular-odometer.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-validation-match/dist/angular-validation-match.min.js"></script>
+    <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-payments/lib/angular-payments.min.js"></script>
+    <script src="bower_components/angular-tablesort/js/angular-tablesort.js"></script>
+    <script src="bower_components/tg-angular-validator/dist/angular-validator.min.js"></script>
+    <script src="bower_components/ngSweetAlert/SweetAlert.min.js"></script>
+    <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="bower_components/angularjs-datepicker/src/js/angular-datepicker.js"></script>
+    <!-- endbower -->
+    <script src="WebJs/angularconfig.js"></script>
+    <script src="WebJs/config-service.js"></script>
+    <script src="WebJs/modernizr.js"></script>
+    <script src="WebJs/imgLiquid-min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js "></script>
+    <script src="scripts/controllers/main.js "></script>
+    <script src="js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="js/pie-chart.js"></script>
+    <!-- isotop -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- lightgallery -->
+    <script src="js/prettify.js"></script>
+    <script src="js/froogaloop2.min.js"></script>
+    <script src="js/jquery.justifiedGallery.min.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/lightgallery.js"></script>
+    <script src="js/lg-fullscreen.js"></script>
+    <!--<script src="js/lg-thumbnail.js"></script>-->
+    <script src="js/lg-video.js"></script>
+    <script src="js/lg-autoplay.js"></script>
+    <!-- flexslider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- datetimepicker -->
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/site-main.js"></script>
+    <script type="text/javascript" src="js/bootstrap-tabcollapse.js"></script>
+    <script type="text/javascript">
+    $('button').on('click', function() {
+        //alert('preserve attached java script data!');
+    });
+    $('#myTab').tabCollapse();
+    $('#myTab').on('shown-accordion.bs.tabcollapse', function() {
+        $('.panel-collapse').removeClass('in');
+    });
+
+    var forEach = function(t, o, r) {
+        if ("[object Object]" === Object.prototype.toString.call(t))
+            for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+        else
+            for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t)
+    };
+
+    var hamburgers = document.querySelectorAll(".hamburger");
+    if (hamburgers.length > 0) {
+        forEach(hamburgers, function(hamburger) {
+            hamburger.addEventListener("click", function() {
+                this.classList.toggle("is-active");
+            }, false);
+        });
+    }
+
+
+    $('.hamburger').on('click', function() {
+        $('.main-sitemenu').toggleClass('menu-active');
+
+    });
+    $('.js-activated').dropdownHover().dropdown();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+{
+  "name": "angular-odometer",
+  "version": "0.0.10",
+  "main": "dist/angular-odometer.js",
+  "license": "MIT",
+  "authors": [
+    "Bahaaldine AZARMI <bahaaldine@gmail.com>",
+    "Balakrishnan V K"
+  ],
+  "description": "angular component that renders Hubspot odometer",
+  "keywords": [
+    "angular",
+    "odometer"
+  ],
+  "ignore": [
+    "source",
+    "spec",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "bower.json",
+    "gruntfile.js",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "odometer": "0.4.x"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/bahaaldine/angular-odometer",
+  "_release": "0.0.10",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.10",
+    "commit": "6a07f9fc70669ac81ff2e5ef5b7f8ceeed845d02"
+  },
+  "_source": "https://github.com/bahaaldine/angular-odometer.git",
+  "_target": "^0.0.10",
+  "_originalSource": "angular-odometer",
+  "_direct": true
+}

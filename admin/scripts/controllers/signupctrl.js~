@@ -1,0 +1,311 @@
+angular.module('psnApp')
+    .controller('signupctrl', function($scope, $timeout, $ocLazyLoad, $http, configService, USAtest, $httpParamSerializerJQLike, $mdDialog) {
+        $scope.regex = RegExp('^((https?|ftp)://)?([a-z]+[.])?[a-z0-9-]+([.][a-z]{1,4}){1,2}(/.*[?].*)?$', 'i');
+
+
+
+        $scope.offc_phn = "";
+        $scope.phnformatter = function(val) {
+            $scope.offc_phn = val;
+            var a = $scope.offc_phn;
+            // var code = $('#code').val();
+
+
+
+
+            var numbers = $scope.offc_phn.replace(/\D/g, ''),
+                char = {
+                    0: '(',
+                    3: ') ',
+                    6: ' - '
+                };
+            console.log(JSON.stringify(numbers));
+            $scope.offc_phn = '';
+            a = "";
+            for (var i = 0; i < numbers.length; i++) {
+                a += (char[i] || '') + numbers[i];
+            }
+
+
+
+
+
+
+            return a;
+        }
+        $scope.nextstep = true;
+        $scope.nextstep2 = false;
+        $scope.registerfirstphase = function() {
+
+            var first_name = $scope.firstname;
+            var last_name = $scope.Lastname;
+            var Username = $scope.Username;
+            var emailId = $scope.emailaddress;
+            var password = $scope.pass;
+            var confirm_pass = $scope.cpass;
+
+
+
+
+            localStorage.setItem("first_name", first_name);
+            localStorage.setItem("last_name", last_name);
+            localStorage.setItem("username", Username);
+            localStorage.setItem("password", password);
+            localStorage.setItem("email", emailId);
+
+
+            var data = $httpParamSerializerJQLike({
+                emailId: emailId,
+
+
+            });
+
+            var config = {
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
+                }
+            }
+
+
+            $http.post(configService.getEnvConfig().apiURL + "emailcheck", data, config)
+                .success(
+                    function(data, status, headers, config) {
+                        console.log(data);
+
+
+
+                        if (data.status == 1) {
+                            $scope.nextstep = false;
+                            $scope.nextstep2 = true;
+                            $mdDialog.show(
+                                $mdDialog.alert()
+                                .parent(angular.element(document.querySelector('#signup')))
+                                .clickOutsideToClose(false)
+                                .title('PSN')
+                                .textContent('Congrats. Please proceed to second phase')
+                                .ariaLabel('Alert Dialog Demo')
+                                .ok('Got it!')
+
+                            );
+                        } else {
+
+                            $mdDialog.show(
+                                $mdDialog.alert()
+                                .parent(angular.element(document.querySelector('#signup')))
+                                .clickOutsideToClose(false)
+                                .title('PSN')
+                                .textContent('Email is already in use.')
+                                .ariaLabel('Alert Dialog Demo')
+                                .ok('Got it!')
+
+                            );
+                        }
+                    }).error(
+                    function(data, status, header, config) {
+                        console.log(data);
+
+                        // to prevent interaction outside of dialog
+
+                        $mdDialog.show(
+                            $mdDialog.alert()
+                            .parent(angular.element(document.querySelector('#signup')))
+                            .clickOutsideToClose(false)
+                            .title('PSN')
+                            .textContent('OOPS. Server error.')
+                            .ariaLabel('Alert Dialog Demo')
+                            .ok('cancel!')
+
+                        );
+
+                    });
+
+
+        }
+
+
+        $scope.init = function() {
+
+            $scope.data = ["0", "1-10", "10+"];
+            USAtest.getData().then(function(data) {
+                $scope.usastate = data.data;
+                //  console.log(data)        
+            });
+
+            $scope.businesstype();
+        }
+
+        //   getting business types
+
+        $scope.businesstype = function() {
+            var data = {
+
+
+            };
+
+            var config = {
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
+                }
+            }
+
+
+            $http.get(configService.getEnvConfig().apiURL + "businesstypes",config)
+                .success(
+                    function(data, status, headers, config) {
+                        console.log(data.data);
+                       $scope.business = data.data;
+
+
+                    }).error(
+                    function(data, status, header, config) {
+                        console.log(data);
+                    });
+
+
+        }
+
+
+
+        // register second phase
+
+
+
+        $scope.registersecondphase = function() {
+
+            var business_name = $scope.businessname;
+            var business_type = $scope.Business_Types;
+            var address = $scope.address_info;
+            var suite = $scope.suite;
+            var state = $scope.state;
+            var country = "";
+            var email = localStorage.getItem("email");
+            var cell_phone = "";
+            var memberships_id = "";
+            var refer_id = "";
+            var city = $scope.city_info;
+            var zip = $scope.zip_info;
+            var website = $scope.web_info;
+            var off_phn = $scope.offc_phn;
+            var no_of_docs = $scope.docs;
+            var sales_person_ID = $scope.salespersonID;
+            var how_do_you_know_us = $scope.info;
+            var firstname = localStorage.getItem("first_name");
+            var lastname = localStorage.getItem("last_name");
+            var username = localStorage.getItem("username");
+            var password = localStorage.getItem("password");
+            var terms = $scope.sign_check;
+
+            if (terms) {
+                $http({
+                        url: configService.getEnvConfig().apiURL + "signup",
+                        method: "POST",
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        data: $httpParamSerializerJQLike({
+                            'businessName': business_name,
+                            'businesses_id': business_type,
+                            'address': address,
+                            'suite': suite,
+                            'city': city,
+                            'state': state,
+                            'country': country,
+                            'office_phone': off_phn,
+                            'email': email,
+                            'website': website,
+                            'noOfDoc': no_of_docs,
+                            'first_name': firstname,
+                            'last_name': lastname,
+                            'cell_phone': cell_phone,
+                            'username': username,
+                            'password': password,
+                            'memberships_id': memberships_id,
+                            'refer_id': refer_id,
+                            'refer_chanel': how_do_you_know_us
+                        }),
+
+                    })
+                    .then(function(response) {
+
+                            console.log(response);
+                            if (response.data.status == 1) {
+
+
+
+                                var confirm = $mdDialog.confirm()
+                                    .parent(angular.element(document.querySelector('#signup')))
+                                    .title('PSN')
+                                    .textContent('Registration Successfull')
+                                    .ariaLabel('Lucky day')
+                                    .ok('Proceed!')
+
+                                $mdDialog.show(confirm).then(function() {
+
+                                    $('.SignupModal').modal('hide');
+                                    location.reload();
+                                    if (!$('.SignupModal').hasClass('in')) {
+
+                                        $scope.nextstep = true;
+                                        $scope.nextstep2 = false;
+
+                                    }
+
+                                }, function() {
+
+                                });
+                                // $mdDialog.show(
+                                //     $mdDialog.alert()
+                                //     .parent(angular.element(document.querySelector('body')))
+                                //     .clickOutsideToClose(false)
+                                //     .title('PSN')
+                                //     .textContent('Congrats. Registration Completed!')
+                                //     .ariaLabel('Alert Dialog Demo')
+                                //     .ok('Ok!')
+
+                                // );
+
+
+
+                            } else {
+
+
+                                $mdDialog.show(
+                                    $mdDialog.alert()
+                                    .parent(angular.element(document.querySelector('#signup')))
+                                    .clickOutsideToClose(false)
+                                    .title('PSN')
+                                    .textContent('Opps.There was some problem')
+                                    .ariaLabel('Alert Dialog Demo')
+                                    .ok('Ok!')
+
+                                );
+
+
+                            }
+                        },
+                        function(response) { // optional
+
+                        });
+
+            } else {
+
+                $mdDialog.show(
+                    $mdDialog.alert()
+                    .parent(angular.element(document.querySelector('#signup')))
+                    .clickOutsideToClose(false)
+                    .title('PSN')
+                    .textContent('Please agree to the terms and conditions')
+                    .ariaLabel('Alert Dialog Demo')
+                    .ok('Ok!')
+
+                );
+
+
+            }
+
+        }
+
+
+
+
+    });

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>TripoAsia</title>
+
+    <!-- Bootstrap core CSS -->    
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="css/plugins/morris.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/tobeadded.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"> 
+   
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+
+   
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<header class="top_header">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="images/dashboard-logo.png" width="128" height="47" alt=""/></a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span>
+                    	<svg id="Layer_1" x="0px" y="0px" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+<path fill="#555554" d="M21.6,10.1L11.5,0.7L1.4,10.1c-0.1,0.1-0.2,0.4,0,0.5c0.1,0.1,0.4,0.1,0.5,0l1.5-1.4v1.2v10.9H9v-6.3
+	c0-1.4,1.1-2.5,2.5-2.5c1.4,0,2.5,1.1,2.5,2.5v6.3h5.7V10.4V9.2l1.5,1.4c0.1,0.1,0.2,0.1,0.2,0.1c0.1,0,0.2,0,0.3-0.1
+	C21.8,10.5,21.8,10.2,21.6,10.1z"/>
+</svg>
+                    </span> 
+                    </a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-footer">
+                            <a href="#">Read All New Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span>
+                    	<svg id="Layer_1" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+<g>
+	<g>
+		<path fill="#555554" d="M15.7,8.1c0-3.9-3.2-7.1-7.1-7.1C4.7,1,1.5,4.2,1.5,8.1c0,3.9,3.2,7.1,7.1,7.1C12.5,15.2,15.7,12,15.7,8.1
+			z M20,16.9l-4.4-4.4c-0.6,1-1.5,1.9-2.5,2.5l4.4,4.4c0.7,0.7,1.8,0.7,2.5,0C20.7,18.8,20.7,17.6,20,16.9z"/>
+	</g>
+</g>
+</svg>
+                    </span>
+                    </a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span>
+                    	<svg id="Layer_1" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+<g>
+	<g>
+		<path fill="#555554" d="M2,6.7C2.3,6.9,3,7.5,4.4,8.4c1.3,1,2.3,1.7,3,2.2c0.1,0.1,0.2,0.2,0.5,0.4c0.3,0.2,0.5,0.3,0.6,0.5
+			c0.2,0.1,0.4,0.3,0.6,0.4c0.2,0.1,0.5,0.3,0.7,0.3c0.2,0.1,0.4,0.1,0.6,0.1h0c0.2,0,0.4,0,0.6-0.1c0.2-0.1,0.4-0.2,0.7-0.3
+			c0.2-0.1,0.4-0.3,0.6-0.4c0.2-0.1,0.4-0.3,0.6-0.5c0.3-0.2,0.4-0.3,0.5-0.4c0.7-0.5,2.5-1.9,5.4-4c0.6-0.4,1-0.9,1.4-1.5
+			c0.4-0.6,0.6-1.2,0.6-1.9c0-0.5-0.2-1-0.6-1.4c-0.4-0.4-0.8-0.6-1.3-0.6h-17C1.3,1.4,0.8,1.6,0.5,2C0.2,2.4,0,2.9,0,3.6
+			c0,0.5,0.2,1.1,0.6,1.7C1.1,5.9,1.5,6.3,2,6.7z M19.6,9.7c-2.5,1.8-4.5,3.2-5.8,4.2c-0.4,0.3-0.8,0.6-1.1,0.8
+			c-0.3,0.2-0.6,0.4-1.1,0.6c-0.5,0.2-0.9,0.3-1.3,0.3h0c-0.4,0-0.8-0.1-1.3-0.3C8.6,15.2,8.3,15,8,14.8c-0.3-0.2-0.6-0.5-1.1-0.8
+			c-1-0.8-3-2.2-5.8-4.2C0.7,9.4,0.3,9.1,0,8.7v8c0,0.5,0.2,1,0.5,1.4c0.4,0.4,0.8,0.6,1.3,0.6h17c0.5,0,0.9-0.2,1.3-0.6
+			c0.4-0.4,0.5-0.8,0.5-1.4v-8C20.4,9.1,20,9.4,19.6,9.7z"/>
+	</g>
+</g>
+</svg>
+                    </span>
+                    </a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="notification_icon">
+                    	<svg id="Layer_1" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+<path fill="#555554" d="M18.4,8.9c0-3.3-2.2-5.9-5.3-6.6V1.6c0-0.8-0.7-1.6-1.6-1.6c-0.8,0-1.6,0.7-1.6,1.6v0.7
+	C6.8,3,4.6,5.7,4.6,8.9v5.8l-2.1,2.1v1.1h18v-1.1l-2.1-2.1V8.9z M11.5,21c0.1,0,0.3,0,0.4,0c0.7-0.1,1.3-0.6,1.5-1.3
+	c0.1-0.2,0.2-0.5,0.2-0.8H9.4C9.4,20.1,10.3,21,11.5,21z"/>
+</svg>
+						<span class="notify_number">20</span>
+                    </span>
+                    <span class="profile">
+                    	<img src="images/login-image.png" alt=" ">
+                        <span class="profile_dropMenu">
+                        <div class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        	<span>
+                            	<i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </span>
+                         </a>
+                            <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                        </div>
+                        </span>
+                    </span>
+                     John Smith
+                    
+                </li>
+            </ul>
+            </header>
+<div id="wrapper">
+	<!--<div class="overlay"></div>-->
+           <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+               <ul class="nav sidebar-nav">
+                 <li> <a href="#"><span class="icon-menu-icon1"></span> Hotels</a> </li>
+                 <li> <a href="#"><span class="icon-menu-icon2"></span>resorts</a> </li>
+                 <li> <a href="#"><span class="icon-menu-icon3"></span>villas</a> </li>
+                 <li> <a href="#"><span class="icon-menu-icon4"></span>my users</a> </li>
+                 <li> <a href="#"><span class="icon-menu-icon5"></span>my partners</a> </li>
+                
+               </ul>
+              <div class="bottom_logo"><a href="#"><img src="images/dashboard-logo-bottom.png" width="85" height="31" alt=""/></a></div>
+             </nav>
+             
+        <!--middle area-->     
+           <div id="page-wrapper">
+		   <div id="page-content-wrapper">
+           <button type="button" class="hamburger is-open animated fadeInLeft" data-toggle="offcanvas"> </button>
+            <div class="container-fluid"> 
+            <div class="overview_area">  
+            			<div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Overview</h3>
+                            </div>
+                            <div class="panel-body">
+                            	<ul>
+                                	<li>
+                                    	<div class="panel panel-primary">
+                                            <div class="panel-heading">
+                                                <div class="row">
+                                                    <div class="col-xs-3">
+                                                        <span class="icon-menu-icon1"></span>
+                                                    </div>
+                                                    <div class="col-xs-9 text-right">
+                                                    	<div>Total Hotels</div>
+                                                        <div class="huge">450</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                    	<div class="panel panel-primary">
+                                            <div class="panel-heading">
+                                                <div class="row">
+                                                    <div class="col-xs-3">
+                                                        <span class="icon-menu-icon2"></span>
+                                                    </div>
+                                                    <div class="col-xs-9 text-right">
+                                                    	<div>Total Resorts</div>
+                                                        <div class="huge">450</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                    	<div class="panel panel-primary">
+                                            <div class="panel-heading">
+                                                <div class="row">
+                                                    <div class="col-xs-3">
+                                                        <span class="icon-menu-icon3"></span>
+                                                    </div>
+                                                    <div class="col-xs-9 text-right">
+                                                    	<div>Total Villas</div>
+                                                        <div class="huge">450</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                    	<div class="panel panel-primary">
+                                            <div class="panel-heading">
+                                                <div class="row">
+                                                    <div class="col-xs-3">
+                                                        <span class="icon-menu-icon4"></span>
+                                                    </div>
+                                                    <div class="col-xs-9 text-right">
+                                                    	<div>My Users</div>
+                                                        <div class="huge">450</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                    	<div class="panel panel-primary">
+                                            <div class="panel-heading">
+                                                <div class="row">
+                                                    <div class="col-xs-3">
+                                                        <span class="icon-menu-icon5"></span>
+                                                    </div>
+                                                    <div class="col-xs-9 text-right">
+                                                    	<div>My Partners</div>
+                                                        <div class="huge">26</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            </div>
+                        </div>       
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                       <img src="images/dashboard.jpg" alt=" " style="width:100%;">
+                    </div>
+                </div>
+            </div>
+                    </div>
+               </div>            
+            <!-- /.container-fluid -->
+        </div>
+        <!--middle area end--> 
+        <!-- /#page-wrapper -->
+    </div>
+<footer class="buttom_area">
+	<div class="container-fluid">
+    	<div class="row">
+        	<div class="col-sm-6">
+            	<p>&copy; 2016 Tripoasia. All rights reserved.</p>
+            </div>
+            <div class="col-sm-6">
+            	<ul>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+$(document).ready(function () {
+  var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+     isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});
+</script>
+<script src="js/plugins/morris/raphael.min.js"></script>
+<script src="js/plugins/morris/morris.min.js"></script>
+<script src="js/plugins/morris/morris-data.js"></script>
+</html>

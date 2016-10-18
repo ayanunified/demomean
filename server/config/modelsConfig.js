@@ -1,0 +1,20 @@
+var modelDirectory = {};
+
+modelDirectory.USER = require('../models/user');
+modelDirectory.forgot_password_link = require('../models/forgot_password_link');
+modelDirectory.siteSetting = require('../models/siteSettings');
+modelDirectory.user_device = require('../models/user_device');
+modelDirectory.user_session = require('../models/user_session');
+modelDirectory.email_template = require('../models/email_template');
+modelDirectory.notification_template = require('../models/notification_template');
+modelDirectory.accomodation = require('../models/accomodation');
+modelDirectory.accomodation_category = require('../models/accomodation_category');
+modelDirectory.privileges = require('../models/privileges');
+modelDirectory.roles_to_privileges = require('../models/role_privileges');
+modelDirectory.roles = require('../models/roles');
+modelDirectory.partner_accomodation = require('../models/partner_accomodation');
+modelDirectory.partner_accomodation_description = require('../models/partner_accomodation_description');
+modelDirectory.company = require('../models/company');
+modelDirectory.accomodation_to_rooms = require('../models/accomodation_to_rooms');
+modelDirectory.room_book = require('../models/room_book');
+module.exports = modelDirectory;

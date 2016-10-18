@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (max-width:1366px) {
+	.grey-hostcont .container {
+		width: 1140px;
+	}	
+	.becomeahost_bottomCell ul li{
+		margin: 13px 0 0;
+		font-size:13px;	
+		}
+		.get-touch ul li{ margin-top:8px;}
+}
+
+@media only screen and (max-width:1024px) {
+	.becomeahost_bottomCell{ min-height:inherit; border:none;}
+	.becomeahost_bottomTop .col-md-6:nth-child(5){ clear:left;}
+	.become_social ul li {
+    margin: 0 12px 0 18px !important;
+		}
+		.specialist_inner {
+			margin: 0 auto;
+			width: 81%;
+		}
+		.becomehost_tot{ background:none;}
+		.becomehost_tot::before{ right:0;}
+	}
+	
+@media only screen and (max-width:980px) {
+	
+	.becomeahost_bottomTop .col-md-6:nth-child(5){ clear:left;}
+	.becomeahost_bottomTop .col-sm-6:nth-child(3){ clear:left;}
+	
+	}

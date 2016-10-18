@@ -1,0 +1,120 @@
+<!--middle area-->
+<div id="page-wrapper">
+    <div id="page-content-wrapper">
+        <button type="button" class="hamburger is-open animated fadeInLeft" data-toggle="offcanvas"> </button>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol class="breadcrumb custom-style">
+                        <li class="active">
+                            Dashboard/Hotel/Add Hotel
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Add New Hotel</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-4 flamingo-right">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="accomodation_category">Accomodation Category</label>
+                                                    <input type="text" value="Resorts" name="category" class="form-control" id="category" disabled="true">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="name">Name</label>
+                                                    <input type="text" name="name" class="form-control" id="name">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 file_upload">
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-sm-7">
+                                                            <label for="name">Upload your logo</label>
+                                                        </div>
+                                                        <div class="col-sm-5">
+                                                            <input type="file" id="files" />
+                                                            <div class="file_style"><img src="images/file-image.png" alt=" "></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="image_preview">
+                                                    <img id="image" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="comment">Location</label>
+                                                    <textarea class="form-control" rows="1" id="comment" olaceholder="Dunlop Flyover. Bonhogly"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="sel1">Select Partner</label>
+                                                    <select class="form-control" id="sel1">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="admin_top">
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn-link">
+                                                    <i class="fa fa-pencil" aria-hidden="true"></i> Edit
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="admin-map-area">
+                                        <img src="images/img-map.jpg" alt=" ">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary map_addBtn">ADD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!--middle area end-->
+<!-- /#page-wrapper -->
+<script>
+document.getElementById("files").onchange = function() {
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+        // get loaded data and render thumbnail.
+        document.getElementById("image").src = e.target.result;
+    };
+
+    // read the image file as a data URL.
+    reader.readAsDataURL(this.files[0]);
+};
+</script>

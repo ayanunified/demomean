@@ -1,0 +1,374 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (max-width:1366px) {
+	.grey-hostcont .container {
+		width: 1140px;
+	}	
+	.becomeahost_bottomCell ul li{
+		margin: 13px 0 0;
+		font-size:13px;	
+		}
+		.get-touch ul li{ margin-top:8px;}
+		.specialist-left h2{ font-size:27px !important; margin-top:0;}
+		.specialist-left p{ font-size:16px;}
+		.grey-hostcont .container {
+			width: 100% !important;
+		}
+		.bottom_logo{ display:none;}
+}
+
+@media only screen and (max-width:1024px) {
+	.becomeahost_bottomCell{ min-height:inherit; border:none;}
+	.becomeahost_bottomTop .col-md-6:nth-child(5){ clear:left;}
+	.become_social ul li {
+    margin: 0 12px 0 18px !important;
+		}
+		.specialist_inner {
+			margin: 0 auto;
+			width: 81%;
+		}
+		.becomehost_tot{ background:none;}
+		.becomehost_tot::before{ right:0;}
+		.header_massage{
+			margin-left: 9%;
+            padding: 40px 0 36px 15%;
+		}
+		.top_hanger{ right:3%;}
+		.placelocated{ min-height:inherit; padding-bottom:20px;}
+		.becomeahost1_image{ background:none !important;}
+		.description{ background:none !important;}
+		.header_massage{ padding-left:3%;}
+		.host_twoNav li{ font-size:16px;}
+		
+		.placelocated_description{ background:none !important;}
+		.becomehost_tot{min-height: inherit; padding-bottom:20px;}
+		.ui-spinner-down {
+			left: inherit;
+			right: 12% !important;
+			}
+			
+		.panel-heading .col-xs-3{ width:100% !important; text-align:center;}
+		.panel-heading .col-xs-9{ width:100% !important; text-align:center;}
+		.site_settings_upload .btn-primary{ float:right;}
+		.panel-default textarea.form-control {
+			height: 50px;
+		}
+	}
+	
+@media only screen and (max-width:991px) {
+	
+	.becomeahost_bottomTop .col-md-6:nth-child(5){ clear:left;}
+	.becomeahost_bottomTop .col-sm-6:nth-child(3){ clear:left;}
+	.becomehost_tot::before{ display:none;}
+	.becomehost_tot .col-sm-6{ width:100% !important; margin-bottom:15px;}
+	.step-block{ float:left; width:100%;}
+	.grey-hostcont .container {
+    width: 100%;
+	}
+	.grey-hostcont h5{ padding-right:50%;}
+	.specialist-left h2{ font-size:27px;}
+	.specialist-left p{ font-size:18px;}
+	
+	.top_hanger {
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+	}
+	.top_hanger .top_hangerContent img{ display:none;}
+	.circle_icon{ display:none;}
+	.progress{ margin-bottom:0;}
+	.ui-spinner-down {
+    left: inherit;
+    right: 6% !important;
+	}
+	.top_hangerContent{ padding: 24px 32px;}
+	
+	}
+	
+@media only screen and (max-width:800px) {
+	.specialist-left h2 {
+    font-size: 21px;
+	}
+	.specialist-left p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 6px;
+	}
+	
+	
+	
+	.grey-hostcont h5 {
+    padding-right: 0;
+}
+.becomehost_tot {
+    clear: both;
+    margin-top: 0;
+	padding-top:28px;
+	min-height: inherit;
+}
+.becomehost_tot .form-group textarea{ height:228px;}
+.ui-spinner-down {
+    left: inherit;
+    right: 8% !important;
+}
+.overview_area ul li .panel-heading{ min-height:190px;}
+
+	} 
+@media only screen and (max-width:767px){
+.overview_area ul li .panel-heading{ min-height:inherit;}
+
+	.becomeahost_header .navbar-brand{ width:100%; text-align:center;}
+	.top_header{ height:auto;}
+	.becomeahost_header .top-nav {
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+	}
+	.top-nav > li {
+    display: inline-block;
+    float: none;
+	}
+	.specialist-left span{ margin-top:-21px;}
+	.specialist-left {
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.specialist-right {
+    background: url(../images/sefarator2.png) no-repeat center 0;
+    float: right;
+    width: 100%;
+}
+.specialist-right ul {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 20px 0 0 0;
+    padding: 31px 0 0 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+	.specialist-right ul li:nth-child(2) {
+    left: 0;
+    position: relative;
+    top: 0;
+}
+	.specialist-right ul li:nth-child(3) {
+    left: 0;
+    position: relative;
+    top: 0;
+}	
+.specialist-right ul li:nth-child(4) {
+    left: auto;
+    position: relative;
+    top: 0;
+}
+.header_massage{ border:none;}
+.header_massage {
+    margin-left: 0;
+    padding: 15px 0 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.header_five .nav > li a {
+    border: medium none;
+    padding: 12px 24px 12px 20px;
+}
+.header_five .nav > li:last-child {
+    padding-top: 27px;
+}
+.grey-hostcont .step-block ul li.done::before{ right:-16px;}
+.host-map-source img{ width:100%;}
+.becomeahost_wrapper .grey-hostcont h4{ clear:both; margin-top:0;}
+
+.becomeahost_wrapper .grey-hostcont {
+    clear: both;
+    padding-top: 0;
+}
+.becomeahost_wrapper .become_map {
+    clear: both;
+    padding-top: 15px;
+}
+
+
+.becomeahost_wrapper .becomehost_one {
+    clear: both;
+    padding-top: 0 !important;
+}
+.ui-icon {
+    height: 43px;
+    width: 49px;
+}
+.becomeahost_bottomCell{ margin-top:0; padding-top:15px;}
+.becomeahost_bottomCell h2{ text-align:center; font-weight:700;}
+	 .becomeahost_bottomCell ul{ text-align:center;}
+	 .become_social ul li a {
+    font-size: 18px;
+	line-height:18px;
+}
+	.becomeahost_bottomCell p{ text-align:center;}
+	.two_cell li {
+    float: left;
+    width: 100% !important;
+}
+
+.host_twoNav {
+	padding: 0 15px !important;
+}
+.top_ber{ margin-top:30px;}
+.ui-spinner-down {
+    left: inherit;
+    right: 9% !important;
+}
+.top_header{ height:auto; text-align:center; padding-top:10px;}
+.top_header .navbar-header .navbar-brand{ height:auto !important; float:none !important;}
+.top-nav > li{ border:none;}
+.sidebar-nav {
+    float: left;
+    padding-top: 170px;
+    position: relative;
+    width: 100%;
+}
+#page-content-wrapper{ padding-top:8px;}
+#wrapper.toggled .hamburger {
+    margin-left: 20px;
+    top: 22px;
+	left:0;
+}
+
+.hamburger{
+margin-left: 20px;
+top: 22px;
+display:none;
+}
+
+#sidebar-wrapper{
+width:100% !important; height:auto;
+}
+.navbar-fixed-top, .navbar-fixed-bottom{
+position:relative;
+float:left;
+width:100%;
+
+}
+#page-wrapper{ float:left; height:auto;}
+#wrapper.toggled #page-wrapper {
+    padding: 0;
+	width: 100% !important;
+}
+.toggled .sidebar-nav {
+    position: inherit;
+    width: 100%;
+}
+.bottom_logo{ display:none;}
+
+.buttom_area p{ text-align:center;}
+.buttom_area ul{ float:none; margin-top:20px;
+display:inline-block;
+width:100%; text-align:center;}
+.buttom_area ul li{ float:none; display:inline-block;}
+.buttom_area{ position:inherit;}
+.panel-heading .col-xs-9 div{ min-height:30px;}
+.panel-heading .col-xs-9 div {
+    min-height: 44px;
+    padding-top: 6px;
+}
+
+.profile ul.dropdown-menu {
+    left: inherit;
+    right: 0;
+}
+.profile ul.dropdown-menu::before{ right:0;}
+.becomeahost_header .top-nav{ padding-top:15px;}
+.header_massage{ padding-top:15px !important; clear:both;}
+
+
+}
+@media only screen and (max-width:500px){
+
+.ui-spinner-down {
+    left: inherit;
+    right: 13% !important;
+}
+.top_ber{ margin-top:50px;}
+.description_topContent h3{ font-size:25px;}
+.top-nav > li{ padding:0 10px;}
+
+.overview_area ul li {
+    float: left;
+    margin: 0 0 0 2%;
+    width: 100%;
+}
+.panel-heading .col-xs-9 div{ min-height:inherit;}
+.becomehost_tot .form-group label{ font-size:18px;}
+.top_hangerContent h2{ font-size:18px;}
+}
+@media only screen and (max-width:360px){
+	.grey-hostcont h4{ font-size:30px; line-height:36px;}
+	.specialist_inner {
+    margin: 0 auto;
+    width: 100%;
+}
+.specialist-left h2 {
+    font-size: 19px;
+    line-height: 24px;
+}
+.specialist-left p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 6px;
+}
+.specialist-right{ margin-top:20px;}
+	.ui-spinner-down {
+    left: inherit;
+    right: 17% !important;
+}
+.become_social ul li {
+    margin: 0 12px 0 16px !important;
+}
+.specialist-left h2 {
+    font-size: 23px !important;
+    margin-top: 0;
+}
+.top_hangerContent h2{ 
+font-size:18px;
+}
+
+.top-nav > li > a {
+    color: #999;
+    line-height: 20px;
+    padding: 14px 0 31px;
+}
+.sidebar-nav{ padding-top:200px;}
+.add-manage-header .top-nav > li > a{ padding-bottom:10px;}
+.site_settings_upload .btn-primary{
+padding: 0 43px;
+}
+
+}
+@media only screen and (max-width:320px){
+	.ui-spinner-down {
+    left: inherit;
+    right: 20% !important;
+}
+.site_settings_upload .btn-primary{
+padding: 0 30px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
